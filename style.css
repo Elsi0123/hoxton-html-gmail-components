@@ -1,0 +1,94 @@
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body {
+height: 100vh;
+display: grid;
+grid-template:
+"header header header header" auto
+"left-menu email settings shortcut" 1fr/
+180px 1fr 180px 50px;
+}
+
+
+.header {
+grid-area: header;
+
+
+display: grid;
+grid-template-columns: auto 1fr auto;
+gap: 1rem;
+padding: 0.5rem 1rem;
+
+}
+
+
+ .header__left-menu {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 0.5rem;
+    align-items: center;
+
+} 
+
+
+.header__search {
+    display: grid;
+    padding: 0px 1rem;
+    grid-template-columns: auto 1fr auto;
+}
+
+.header__search__search-icon {
+background-color:  #f0f3f4;
+display: grid;
+place-items: center;
+padding: 2px;
+color: #847e7c;
+
+}
+
+.header__search__search-icon span {
+    font-size: 1.2rem;
+}
+
+.header__search__bar{
+border: none;
+border-radius: 3px;
+background-color: #f0f3f4;
+padding: 0 0.5rem;
+font-size: 0.8rem;
+
+}
+
+.header__search__expand {
+background-color: #f0f3f4;
+display: grid;
+place-items: center;
+padding: 2px;
+color: #847e7c;
+
+}
+
+
+
+.left-menu {
+grid-area: left-menu;
+background-color: #80f67c;
+}
+
+.email {
+grid-area: email;
+background-color: #faa4fb;
+}
+
+.settings {
+    grid-area: settings;
+background-color: #94e4fd;
+}
+
+.shortcut {
+grid-area: shortcut;
+background-color: #f1f19a;
+}
